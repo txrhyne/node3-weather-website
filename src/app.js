@@ -15,7 +15,7 @@ app.set('view engine', 'hbs')
 app.set('views', viewpaths)
 hbs.registerPartials(partialsPath)
 
-//cd Documents/Node/node-course/webserverd
+//cd Documents/Node/node-course/webserver
 
 app.use(express.static(publicDirectoryPath))
 
