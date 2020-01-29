@@ -10,7 +10,7 @@ const forecast = (x,y, callback) => {
       callback('there is a poorly formatted address' , undefined)
     }
       else {
-        callback(undefined,{data:body.daily.summary + ' With a temperature of ' + body.currently.temperature + ' and a ' + body.currently.precipProbability + '% chance of rain.' })
+        callback(undefined,{data:body.daily.summary + ' With a temperature of ' + body.currently.temperature + ' and a ' + body.currently.precipProbability + '% chance of rain. Also the windspeed is ' + body.currently.windSpeed + ' mph.' })
     }
   }
 )}
